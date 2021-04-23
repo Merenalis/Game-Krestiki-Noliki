@@ -1,0 +1,130 @@
+body {
+    background-color: #404040;
+}
+
+.playground {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#area {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: silver;
+    border-radius: 5px;
+}
+
+.box {
+    height: 98px;
+    width: 98px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#modal-result {
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(23, 18, 18, 0.9);
+}
+
+#modal-window {
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+    background-color: #404040;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#btn-new_game {
+    width: 150px;
+    height: 20px;
+    background-color: #1d1d19;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#modal-start {
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#overlay-start {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(23, 18, 18, 0.9);
+}
+
+#modal-window-start {
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+    background-color: #404040;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#btn-start_game {
+    width: 150px;
+    height: 20px;
+    background-color: #1d1d19;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#content-start {
+    text-align: center;
+    padding-top: 35px;
+}
+
+#results {
+    width: 200px;
+    background-color: #908f8f;
+    text-align: center;
+    border-radius: 5px;
+    margin: auto auto 20px;
+}
