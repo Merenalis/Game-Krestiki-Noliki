@@ -21,6 +21,7 @@ area.addEventListener('click', e => {
 
 const check = () => {
     const boxes = document.getElementsByClassName('box');
+    
     const arr = [
         [0, 1, 2],
         [3, 4, 5],
@@ -48,7 +49,11 @@ const check = () => {
             winning(win_nolik, win_krestik);
             break;
 
-        } else if (!(boxes[arr[i][0]].innerHTML == 'X' && boxes[arr[i][1]].innerHTML == 'X' && boxes[arr[i][2]].innerHTML == 'X') && !(boxes[arr[i][0]].innerHTML == '0' && boxes[arr[i][1]].innerHTML == '0' && boxes[arr[i][2]].innerHTML == '0') && move == 9) {
+        } /*else if (!(boxes[arr[i][0]].innerHTML == 'X' && boxes[arr[i][1]].innerHTML == 'X' && boxes[arr[i][2]].innerHTML == 'X') && !(boxes[arr[i][0]].innerHTML == '0' && boxes[arr[i][1]].innerHTML == '0' && boxes[arr[i][2]].innerHTML == '0') && move == 9) {
+            result = 'Ничья';
+            resultsView(result);
+        }*/
+        else if (move == 9) {
             result = 'Ничья';
             resultsView(result);
         }
@@ -73,6 +78,7 @@ const closeMod = () => {
 
 }
 const closeMod_start = () => {
+
     modal_start.style.display = 'none';
 }
 
